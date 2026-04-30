@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+    <h1> Formulário </h1>
+</header>
+
+<body>
+    <main>
+        <form action="/processar" method="post">
+
+            <p>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome aqui!" required>
+            </p>
+
+            <p>
+                <label for="idade">Idade:</label><br>
+                <input type="number" id="idade" name="idade" placeholder="Sua idade aqui!" required>
+            </p>
+
+            <p>
+                <label for="data_nascimento">Data de nascimento:</label><br>
+                <input type="date" id="data_nascimento" name="data_nascimento" required>
+            </p>
+
+            <p>
+                <label for="cidade_mora">Cidade em que mora:</label><br>
+                <input type="text" id="cidade_mora" name="cidade_mora" placeholder="Sua cidade aqui!" required>
+            </p>
+
+            <p>
+                <label for="cidade_natal">Cidade natal:</label><br>
+                <input type="text" id="cidade_natal" name="cidade_natal" placeholder="Sua cidade natal aqui!" required>
+            </p>
+
+            <p> 
+                <label for="curso">Curso:</label><br>
+                <input type="text" id="curso" name="curso" placeholder="Seu curso aqui!" required>
+            </p>
+
+            <div class="captcha-section">
+                <label>Verificação Humana</label>
+
+                <div class="captcha-visual">
+                    <div class="noise"></div>
+                    <span class="captcha-code">A 7 X 2 P</span>
+                    <div class="line"></div>
+                </div>
+
+                <input type="text" placeholder="Introduza o código" required>
+            </div>
+
+            <p>
+                <button type="submit">Enviar</button>
+            </p>
+
+        </form>
+    </main>
+    
+</body>
+
+<footer>
+    <p>© 2026 - Formulário</p>
+</footer>
+
+</html>

@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e8f5e9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #a5d6a7;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #43a047;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1b5e20;
+}
+
+.captcha-section {
+    margin: 20px 0;
+}
+
+.captcha-visual {
+    position: relative;
+    background: #eee;
+    height: 60px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.captcha-code {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #000000;
+    transform: rotate(-5deg);
+    z-index: 2;
+}
+
+.line {
+    position: absolute;
+    width: 120%;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    transform: rotate(10deg);
+    top: 50%;
+    z-index: 1;
+}
+
+footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
